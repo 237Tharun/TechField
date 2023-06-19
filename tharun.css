@@ -1,0 +1,113 @@
+nav{
+    position: relative;
+    margin: 270px auto 0;
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 8px;
+    padding-top: 60px;
+}
+nav a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+nav .tharun{
+    position: absolute;
+    height: 40%;
+    top: 63px;
+    z-index: 0;
+    background: gray;
+    border-radius: 8px;
+
+}
+a:nth-child(1){
+    width: 100px;
+}
+nav .start-Home,a:nth-child(1):hover~.tharun{
+    width: 100px;
+    left: 0;
+}
+a:nth-child(2){
+    width: 100px;
+}
+nav .start-Home,a:nth-child(2):hover~.tharun{
+    width: 100px;
+    left: 100px;
+}
+a:nth-child(3){
+    width: 150px;
+}
+nav .start-Home,a:nth-child(3):hover~.tharun{
+    width: 130px;
+    left: 210px;
+}
+a:nth-child(4){
+    width: 100px;
+}
+nav .start-Home,a:nth-child(4):hover~.tharun{
+    width: 85px;
+    left: 360px;
+}
+a:nth-child(5){
+    width: 100px;
+}
+nav .start-Home,a:nth-child(5):hover~.tharun{
+    width: 80px;
+    left: 460px;
+}
+a:nth-child(6){
+    width: 100px;
+}
+nav .start-Home,a:nth-child(6):hover~.tharun{
+    width: 100px;
+    left: 550px;
+}
+div button{
+    justify-content: right;
+}
+.container .pad{
+    position:relative;
+    width: 250px;
+}
+.container .pad input{
+    width:100%;
+    padding: 10px;
+    border: 2px solid rgb(66, 73, 75);
+    background: none;
+    border-radius: 7px;
+    color: black;
+    font-size: 1em;
+}
+.container .pad span{
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    padding-top: 12px;
+    pointer-events:none;
+    font-size: 1em;
+    color: gray;
+    transition: all 0.3s ease;
+}
+
+.container input:valid~span,
+.container input:focus~span
+{
+    color:rgb(40, 131, 223);
+    transform:translateX(10px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 8px;
+    background:white;
+    border-left: 2px solid rgb(40, 131, 223) ;
+    border-right: 2px solid rgb(40, 131, 223);
+    letter-spacing: 1px;
+}
+.container input:valid,
+.container input:focus
+{
+border: 3px solid rgb(40, 131, 223);
+}

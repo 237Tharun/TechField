@@ -1,0 +1,22 @@
+.ad{
+    height:80px;
+    width:100%;
+    background-color: pink;
+}
+ul li{
+    float:left;
+    list-style-type: none;
+    width:200px;
+    color:white;
+    cursor:pointer;
+}
+ul{
+    margin:0px;
+}
+.section{
+    height:500px;
+    width:100%;
+}
+*{
+    margin:0px;
+}
